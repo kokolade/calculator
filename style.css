@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #05070a;
+    color: #c9d1d9;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #05070a;
+    border: 1px solid #1e3a8a;
+    border-radius: 12px;
+}
+
+.calc-display {
+    background-color: #0b0e14;
+    border: 1px solid #1e3a8a;
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    text-align: right;
+    min-height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.calc-previous {
+    color: #8b949e;
+    font-size: 0.9rem;
+    min-height: 1.4em;
+}
+
+.calc-current {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 600;
+    word-break: break-all;
+}
+
+.calc-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.key {
+    padding: 16px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: inherit;
+    color: #ffffff;
+    background-color: #0b0e14;
+    border: 1px solid #1e3a8a;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.15s ease, transform 0.05s ease;
+}
+
+.key:hover {
+    background-color: #12203f;
+}
+
+.key:active {
+    transform: scale(0.96);
+}
+
+.key:focus-visible {
+    outline: 2px solid #0099ff;
+    outline-offset: 2px;
+}
+
+.key-action {
+    color: #0099ff;
+}
+
+.key-operator {
+    background-color: #12203f;
+    color: #0099ff;
+    font-size: 1.3rem;
+}
+
+.key-zero {
+    grid-column: span 2;
+}
+
+.key-equals {
+    background-color: #0099ff;
+    border-color: #0099ff;
+}
+
+.key-equals:hover {
+    background-color: #0077cc;
+}
+
+
+
+.title {
+    text-align: center;
+    color: #0099ff;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.credit {
+    text-align: center;
+    color: #6e7681;
+    font-size: 0.8rem;
+    margin-top: 15px;
+}

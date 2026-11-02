@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main style="width:100%">
+        <div class="calculator" id="calculator">
+                <h1 class="title">Calculator</h1>
+                <div class="calc-display" aria-live="polite">
+                    <div class="calc-previous" id="calc-previous"></div>
+                    <div class="calc-current" id="calc-current">0</div>
+                </div>
+
+                <div class="calc-keys">
+                    <button type="button" class="key key-action" data-action="clear">AC</button>
+                    <button type="button" class="key key-action" data-action="delete">DEL</button>
+                    <button type="button" class="key key-action" data-action="percent">%</button>
+                    <button type="button" class="key key-operator" data-operator="/">&divide;</button>
+
+                    <button type="button" class="key" data-digit="7">7</button>
+                    <button type="button" class="key" data-digit="8">8</button>
+                    <button type="button" class="key" data-digit="9">9</button>
+                    <button type="button" class="key key-operator" data-operator="*">&times;</button>
+
+                    <button type="button" class="key" data-digit="4">4</button>
+                    <button type="button" class="key" data-digit="5">5</button>
+                    <button type="button" class="key" data-digit="6">6</button>
+                    <button type="button" class="key key-operator" data-operator="-">&minus;</button>
+
+                    <button type="button" class="key" data-digit="1">1</button>
+                    <button type="button" class="key" data-digit="2">2</button>
+                    <button type="button" class="key" data-digit="3">3</button>
+                    <button type="button" class="key key-operator" data-operator="+">+</button>
+
+                    <button type="button" class="key key-zero" data-digit="0">0</button>
+                    <button type="button" class="key" data-action="decimal">.</button>
+                    <button type="button" class="key key-equals" data-action="equals">=</button>
+                </div>
+            </div>
+
+            
+        <p class="credit">Built by Michael Adenugba</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
